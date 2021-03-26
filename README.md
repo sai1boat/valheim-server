@@ -26,7 +26,7 @@ How to use:
     sh stop.sh
 
 Additional information:
-The world data for your server will be saved in $HOME/valheim_worlds of 
-the user that invoked sh start.sh
+The world data for your server will be saved in $HOME/valheim_data of 
+the user that invoked  sh start.sh
 
 
