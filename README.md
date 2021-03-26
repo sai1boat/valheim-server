@@ -2,6 +2,10 @@
 
 easy valheim server running in docker
 
+Requirements:
+OS: Linux
+Software: git, docker, bash
+
 How to use: 
 
 1. Customize the assets/entry-point.sh command to spec out your server.
@@ -23,6 +27,6 @@ How to use:
 
 Additional information:
 The world data for your server will be saved in $HOME/valheim_worlds of 
-the user that you used to invoke sh start.sh
+the user that invoked sh start.sh
 
 
