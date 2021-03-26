@@ -9,6 +9,7 @@ Change the password, the world name, or the server name in that file.
 
 2. When you first start out or whenever you want to update the server code:
 sudo docker rmi -f valheim
+
 sudo docker build -t valheim .
 
 3. Run the following command to start the server
