@@ -1,32 +1,48 @@
-# Valheim Server
+# Easy Valheim Server
 
-easy valheim server running in docker
+
 
 Requirements:
-OS: Linux
-Software: git, docker, bash
+- OS: Linux
+- Software: git, docker, bash
+
+Additional information:
+The world data for your server will be saved on the host in $HOME/valheim_data of 
+the user that invoked  sh start.sh. i.e. Not in the docker container.
 
 How to use: 
 
-1. Customize the assets/entry-point.sh command to spec out your server.
-    Change the password, the world name, or the server name in that file.
+1. Clone the repository
+```
+    git clone https://gitlab.com/johnbowker/valheim-server.git
+```
 
-2. When you first start out or whenever you want to update the server code:
+2. Change directory to project root
+```
+    cd valheim-server
+```
+3. Customize the assets/entry-point.sh file with your preferred text editor. Change
+the world name, server name, and password.
 
+4. Build the docker image. You do this also when you desire to update the server code:
+```
     sudo docker rmi -f valheim
 
     sudo docker build -t valheim .
-
-3. Run the following command to start the server
-
+```
+5. Run the following command to start the server
+```
     sh start.sh
-
-4. And run this to stop it:
-
+```
+6. You can tail the logs by running this command (control-c to stop):
+```
+    sh logs.sh
+```
+7. Run the following comand to stop the server.
+```
     sh stop.sh
+```
 
-Additional information:
-The world data for your server will be saved in $HOME/valheim_data of 
-the user that invoked  sh start.sh
+
 
 
