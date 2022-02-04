@@ -8,20 +8,20 @@ Requirements:
 
 Additional information:
 The world data for your server will be saved on the host in $HOME/valheim_data of 
-the user that invoked  sh start.sh. i.e. Not in the docker container.
+the user that invoked  sh start.sh. i.e. Your world data is not in the docker container.
 
 How to use: 
 
 1. Clone the repository
 ```
-    git clone https://gitlab.com/johnbowker/valheim-server.git
+    git clone https://github.com/sai1boat/valheim-server.git
 ```
 
 2. Change directory to project root
 ```
     cd valheim-server
 ```
-3. Customize the assets/entry-point.sh file with your preferred text editor. Change
+3. Customize the start.sh file with your preferred text editor. Change
 the world name, server name, and password.
 
 4. Build the docker image. You do this also when you desire to update the server code:
